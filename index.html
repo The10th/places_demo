@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Places Demo</title>
-        <link rel="stylesheet" href="styles/index.css">
-    </head>
-    <body>
-        <div data-region="map" class="app-map" id="map">
+  <head>
+    <meta charset="utf-8">
+    <title>Places Demo</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div><input type='text' value="" id="searchBar"></div>
+    <button onclick='search()'>button</button>
+    
+    <div data-region="map" class="app-map" id="map">
 
-        </div>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbnogVPHulQsKG4bMcUOHo4qlx9bgzX5o&libraries=places"></script>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
+    </div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbnogVPHulQsKG4bMcUOHo4qlx9bgzX5o&libraries=places"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
