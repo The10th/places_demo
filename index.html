@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <div><input type='text' value="" id="searchBar"></div>
-    <button onclick='search()'>button</button>
-    
+    <div>
+        <input data-element="place-search" type='text' value="" id="searchBar">
+        <!-- <button data-action="submit-search" onclick='search()'>Submit</button> -->
+        <button data-search="submit-search" onClick="search()">Submit</button>
+    </div>
+
     <div data-region="map" class="app-map" id="map">
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbnogVPHulQsKG4bMcUOHo4qlx9bgzX5o&libraries=places"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>

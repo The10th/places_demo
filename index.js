@@ -21,7 +21,7 @@ function initialize() {
   request = {
     location    : center,
     radius      : 8047,
-    types: query
+    types       : query
   };
 
   infoWindow = new google.maps.InfoWindow();
@@ -33,9 +33,9 @@ function initialize() {
     map.setCenter(event.latLng)
     clearResults(markers)
     request = {
-      location: event.latLng,
-      radius: 8047,
-      types: query 
+      location  : event.latLng,
+      radius    : 8047,
+      types     : query
     };
 
     service.nearbySearch(request, callback);
