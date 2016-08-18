@@ -1,10 +1,9 @@
-var map;
-var infoWindow;
-
-var request;
-var service;
-var markers = [];
-var query = ['hotel'];
+var map,
+  infoWindow,
+  request,
+  service,
+  markers = [],
+  query = ['hotel'];
 
 function search(){
   query = [document.getElementById('searchBar').value];
@@ -24,7 +23,6 @@ function initialize() {
     radius      : 8047,
     types: query
   };
-    console.log('asd', request.types[0]);
 
   infoWindow = new google.maps.InfoWindow();
 
@@ -39,7 +37,6 @@ function initialize() {
       radius: 8047,
       types: query 
     };
-    console.log('asd', request.types[0]);
 
     service.nearbySearch(request, callback);
   })
