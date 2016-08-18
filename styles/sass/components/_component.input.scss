@@ -1,0 +1,21 @@
+$input-border--default: palette(navy);
+
+.c-input {
+    border: 1px solid $input-border--default;
+    border-radius: $border-radius--default;
+    padding: 5px 7px;
+    color: $text-color--default;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+/*.c-input--borderedSolid {
+    border-color: ;
+}
+
+.c-input--borderedGradient {
+    border-color: ;
+}*/

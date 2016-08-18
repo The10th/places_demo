@@ -1,0 +1,41 @@
+/* Center Positioning
+-----------------------------*/
+.u-center--horizonal {
+    margin: 0 auto;
+}
+
+.u-center--vertical {
+    vertical-align: middle;
+}
+
+/* Padding Resets
+-----------------------------*/
+.u-paddingV--none {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.u-paddingH--none {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.u-paddingTop--none {
+    padding-top: 0;
+}
+
+.u-paddingBottom--none {
+    padding-bottom: 0;
+}
+
+/* Full Padding Utilities
+-----------------------------*/
+.u-padding--xs { padding: 2px; }
+
+.u-padding--sm { padding: 5px; }
+
+.u-padding--md { padding: 10px; }
+
+.u-padding--lg { padding: 15px; }
+
+.u-padding--xl { padding: 20px; }

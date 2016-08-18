@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Places Demo</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <div>
-        <input data-element="place-search" type='text' value="" id="searchBar">
-        <!-- <button data-action="submit-search" onclick='search()'>Submit</button> -->
-        <button data-search="submit-search" onClick="search()">Submit</button>
+    <div class="u-padding--md">
+        <input data-element="place-search" class="c-input" type="text" value="" id="searchBar" >
+        <button data-action="submit-search" class="c-btn" onclick="search()">Submit</button>
     </div>
 
     <div data-region="map" class="app-map" id="map">

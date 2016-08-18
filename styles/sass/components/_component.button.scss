@@ -1,0 +1,25 @@
+$btn-bg--default    : palette(gray, light);
+$btn-border--default: $btn-bg--default;
+$btn-color--default : palette(navy);
+
+$btn-border--hover  : $btn-color--default;
+
+.c-btn {
+    border-radius: $border-radius--default;
+    border: 1px solid $btn-border--default;
+    background-color: $btn-bg--default;
+    color: $btn-color--default;
+    padding: 5px 7px;
+    transition: $transition-timing--default ease;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border-color: $btn-border--hover;
+    }
+}

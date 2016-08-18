@@ -1,0 +1,28 @@
+//out: ../index.css
+
+/* Settings
+-----------------------------*/
+@import './settings/_setting.global';
+
+/* Utilities
+-----------------------------*/
+@import './utilities/_utility.positioning';
+
+
+/* Components
+-----------------------------*/
+@import './components/_component.navbar';
+@import './components/_component.button';
+@import './components/_component.input';
+@import './components/_component.map';
+
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: $text-color--default;
+}

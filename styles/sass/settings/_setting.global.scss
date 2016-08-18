@@ -1,0 +1,48 @@
+/* Color function and palette
+-----------------------------*/
+
+// Make the 'base' color the default value
+$palette-key: 'base' !default;
+
+@function palette($color-name, $color-variant: $palette-key) {
+    //make the  variant optional
+    @if ($color-variant != null) {
+        @return map-get(map-get($color-palette, $color-name), $color-variant);
+    } @else {
+        @return map-get($color-palette, $color-name);
+    }
+}
+
+$color-palette : (
+    gray : (
+        dark    : #1A1A1B,
+        base    : #333F44,
+        light   : #DFEBED
+    ),
+
+    navy : (
+        dark    : #00334E,
+        base    : #145374,
+        light   : #5588A3,
+    ),
+
+    mint : (
+        dark    : #37AA9C,
+        base    : #94F3E4,
+        light   : #CEFFF1
+    ),
+
+    lavender : (
+        dark    : #584F84,
+        base    : #A56CC1,
+        light   : #D7C1E0
+    )
+);
+
+/* Default Values
+-----------------------------*/
+$text-color--default: palette(navy);
+
+$border-radius--default: 2px;
+
+$transition-timing--default: .3s;
