@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <div class="u-padding--md">
-        <input data-element="place-search" class="c-input" type="text" value="" id="searchBar" >
-        <button data-action="submit-search" class="c-btn" onclick="search()">Submit</button>
-    </div>
-
-    <div data-region="map" class="app-map" id="map">
-
+      <div class="c-navbar u-textAlign--center">
+          <h3>Places Thing-a-ma-hooey</h3>
+      </div>
+      <div class="c-container">
+          <div data-region="map" class="app-map" id="map"></div>
+          <div class="app-searchContainer u-center--horizonal">
+              <input data-element="place-search" class="c-input c-input--fullWidth" type="text" value="" id="searchBar" >
+              <button data-action="submit-search" class="c-btn c-btn--fullWidth" onclick="search()">Submit</button>
+          </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbnogVPHulQsKG4bMcUOHo4qlx9bgzX5o&libraries=places"></script>

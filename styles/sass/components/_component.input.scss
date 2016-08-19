@@ -2,6 +2,7 @@ $input-border--default: palette(navy);
 
 .c-input {
     border: 1px solid $input-border--default;
+    box-sizing: border-box;
     border-radius: $border-radius--default;
     padding: 5px 7px;
     color: $text-color--default;
@@ -10,6 +11,10 @@ $input-border--default: palette(navy);
     &:active {
         outline: none;
     }
+}
+
+.c-input--fullWidth {
+    width: 100%;
 }
 
 /*.c-input--borderedSolid {

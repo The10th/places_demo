@@ -1,0 +1,7 @@
+.c-navbar {
+    padding: 5px;
+    position: relative; //a preemptive strike for absolutely position icons in the future
+    border: 1px solid;
+    border-top-color: palette(navy, light);
+    border-bottom-color: palette(navy, light);
+}

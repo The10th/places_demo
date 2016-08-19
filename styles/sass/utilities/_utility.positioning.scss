@@ -39,3 +39,144 @@
 .u-padding--lg { padding: 15px; }
 
 .u-padding--xl { padding: 20px; }
+
+/* Vertical Padding Utilities
+-----------------------------*/
+.u-paddingV--xs {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.u-paddingV--sm {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.u-paddingV--md {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.u-paddingV--lg {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.u-paddingV--xl {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Horizontal Padding Utilities
+-----------------------------*/
+.u-paddingH--xs {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.u-paddingH--sm {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.u-paddingH--md {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.u-paddingH--lg {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.u-paddingH--xl {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Margin Resets
+-----------------------------*/
+.u-marginV--none {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.u-marginH--none {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.u-marginTop--none {
+    margin-top: 0;
+}
+
+.u-marginBottom--none {
+    margin-bottom: 0;
+}
+
+/* Full Margin Utilities
+-----------------------------*/
+.u-margin--xs { margin: 2px; }
+
+.u-margin--sm { margin: 5px; }
+
+.u-margin--md { margin: 10px; }
+
+.u-margin--lg { margin: 15px; }
+
+.u-margin--xl { margin: 20px; }
+
+
+/* Vertical Margin Utilities
+-----------------------------*/
+.u-marginV--xs {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.u-marginV--sm {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.u-marginV--md {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.u-marginV--lg {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.u-marginV--xl {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Margin Utilities
+-----------------------------*/
+.u-marginH--xs {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.u-marginH--sm {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.u-marginH--md {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.u-marginH--lg {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.u-marginH--xl {
+    margin-left: 20px;
+    margin-right: 20px;
+}

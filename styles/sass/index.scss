@@ -3,11 +3,12 @@
 /* Settings
 -----------------------------*/
 @import './settings/_setting.global';
+@import './settings/_setting.animation';
 
 /* Utilities
 -----------------------------*/
 @import './utilities/_utility.positioning';
-
+@import './utilities/_utility.text';
 
 /* Components
 -----------------------------*/
@@ -15,7 +16,11 @@
 @import './components/_component.button';
 @import './components/_component.input';
 @import './components/_component.map';
+@import './components/_component.container';
 
+/* Application Components
+-----------------------------*/
+@import './app_components/_app.search-container';
 
 html, body {
     height: 100%;
@@ -25,4 +30,18 @@ html, body {
 
 body {
     color: $text-color--default;
+    background: linear-gradient(-145deg,
+                                palette(navy, dark),
+                                palette(navy),
+                                palette(navy, light),
+                                palette(mint, dark),
+                                palette(mint),
+                                palette(mint, light),
+                                palette(lavender, dark),
+                                palette(lavender),
+                                palette(lavender, light));
+    background-size: 800% 800%;
+    -webkit-animation: backgroundGradient 30s ease infinite;
+    -moz-animation: backgroundGradient 30s ease infinite;
+    animation: backgroundGradient 30s ease infinite;
 }
