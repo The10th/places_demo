@@ -3,24 +3,33 @@ var map,
   request,
   service,
   markers = [],
-  query = ['hotel'];
+  query = [];
 
-function search(){
-  query = [document.getElementById('searchBar').value];
-  initialize();
-}
+  $(document).ready(function() {
+    $('[data-action=submit-search]').click(function() {
+      query = [document.querySelector('[data-element="place-search"]').value];
+      initialize();
+    });
+
+    $('[data-element=place-search]').keypress(function(event){
+        if(event.keyCode == 13){
+        $('[data-action=submit-search]').click();
+        }
+    });
+  });
 
 function initialize() {
   var center = new google.maps.LatLng(37.422, -122.084058);
 
-  map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.querySelector('[data-region="map"]'), {
+
     center  : center,
-    zoom    : 13
+    zoom    : 10
   });
 
   request = {
     location    : center,
-    radius      : 8047,
+    radius      : 80467.2, //50 miles
     name        : query
   };
 
@@ -35,7 +44,7 @@ function initialize() {
     request = {
       location  : event.latLng,
       radius    : 8047,
-      name      : query 
+      name      : query
     };
 
     service.nearbySearch(request, callback);

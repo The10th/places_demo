@@ -1,97 +1,97 @@
 /* Center Positioning
 -----------------------------*/
 .u-center--horizonal {
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 .u-center--vertical {
-    vertical-align: middle;
+    vertical-align: middle !important;
 }
 
 /* Padding Resets
 -----------------------------*/
 .u-paddingV--none {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .u-paddingH--none {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .u-paddingTop--none {
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
 .u-paddingBottom--none {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
 }
 
 /* Full Padding Utilities
 -----------------------------*/
-.u-padding--xs { padding: 2px; }
+.u-padding--xs { padding: 2px !important; }
 
-.u-padding--sm { padding: 5px; }
+.u-padding--sm { padding: 5px !important; }
 
-.u-padding--md { padding: 10px; }
+.u-padding--md { padding: 10px !important; }
 
-.u-padding--lg { padding: 15px; }
+.u-padding--lg { padding: 15px !important; }
 
-.u-padding--xl { padding: 20px; }
+.u-padding--xl { padding: 20px !important; }
 
 /* Vertical Padding Utilities
 -----------------------------*/
 .u-paddingV--xs {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
 }
 
 .u-paddingV--sm {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 }
 
 .u-paddingV--md {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 
 .u-paddingV--lg {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
 }
 
 .u-paddingV--xl {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 
 /* Horizontal Padding Utilities
 -----------------------------*/
 .u-paddingH--xs {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
 }
 
 .u-paddingH--sm {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
 }
 
 .u-paddingH--md {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
 .u-paddingH--lg {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 
 .u-paddingH--xl {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 
 /* Margin Resets
@@ -116,67 +116,67 @@
 
 /* Full Margin Utilities
 -----------------------------*/
-.u-margin--xs { margin: 2px; }
+.u-margin--xs { margin: 2px !important; }
 
-.u-margin--sm { margin: 5px; }
+.u-margin--sm { margin: 5px !important; }
 
-.u-margin--md { margin: 10px; }
+.u-margin--md { margin: 10px !important; }
 
-.u-margin--lg { margin: 15px; }
+.u-margin--lg { margin: 15px !important; }
 
-.u-margin--xl { margin: 20px; }
+.u-margin--xl { margin: 20px !important; }
 
 
 /* Vertical Margin Utilities
 -----------------------------*/
 .u-marginV--xs {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
 }
 
 .u-marginV--sm {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }
 
 .u-marginV--md {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 .u-marginV--lg {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 }
 
 .u-marginV--xl {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
 }
 
 /* Horizontal Margin Utilities
 -----------------------------*/
 .u-marginH--xs {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
 }
 
 .u-marginH--sm {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
 }
 
 .u-marginH--md {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 .u-marginH--lg {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
 }
 
 .u-marginH--xl {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
 }

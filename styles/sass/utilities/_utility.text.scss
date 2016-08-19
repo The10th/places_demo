@@ -1,31 +1,31 @@
 /* Text Alignment
 -----------------------------*/
 .u-textAlign--center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .u-textAlign--left {
-    text-alignt: left;
+    text-alignt: left !important;
 }
 
 .u-textAlign--right {
-    text-alight: right;
+    text-alight: right !important;
 }
 
 /* Text Decoration
 -----------------------------*/
 .u-textDecoration--none {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .u-textDecoration--underline {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 .u-textDecoration--overline {
-    text-decoration: overline;
+    text-decoration: overline !important;
 }
 
 .u-textDecoration--strike {
-    text-decoration: line-through;
+    text-decoration: line-through !important;
 }
