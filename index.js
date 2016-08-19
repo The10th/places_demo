@@ -36,7 +36,7 @@ function initialize() {
   infoWindow = new google.maps.InfoWindow();
 
   service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(request, callback);
+  service.nearbySearch(request, PushMarkerArray);
 
   google.maps.event.addListener(map, 'click', function(event) {
     map.setCenter(event.latLng)
@@ -47,11 +47,11 @@ function initialize() {
       name      : query
     };
 
-    service.nearbySearch(request, callback);
+    service.nearbySearch(request, PushMarkerArray);
   })
 }
 
-function callback(results, status) {
+function PushMarkerArray(results, status) {
   if(status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
       markers.push(createMarker(results[i]));
@@ -67,7 +67,7 @@ function createMarker(place) {
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    infoWindow.setContent(place.name);
+    infoWindow.setContent('<div class="u-lineHeight--default">' + place.name + '<br>' + place.vicinity + '<br>' + '<span class="u-text--capitalize">' + place.types[0] + '</span>' + '</div>');
     infoWindow.open(map, this);
   });
 
@@ -75,9 +75,6 @@ function createMarker(place) {
 }
 
 function clearResults(markers) {
-  for (var m in markers) {
-    markers[m].setMap(null)
-  }
   markers = []
 }
 

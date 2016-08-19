@@ -29,3 +29,33 @@
 .u-textDecoration--strike {
     text-decoration: line-through !important;
 }
+
+/* Text Capitalization
+-----------------------------*/
+.u-text--capitalize {
+    text-transform: capitalize !important;
+}
+
+.u-text--uppercase {
+    text-transform: uppercase !important;
+}
+
+
+.u-text--lowercase {
+    text-transform: lowercase !important;
+}
+
+
+/* Line Height
+-----------------------------*/
+.u-lineHeight--small {
+    line-height: 1 !important;
+}
+
+.u-lineHeight--default {
+    line-height: 1.5 !important;
+}
+
+.u-lineHeight--lg {
+    line-height: 2 !important;
+}
