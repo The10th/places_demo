@@ -3,20 +3,20 @@ var map,
   request,
   service,
   markers = [],
-  query = [];
+  query = ['bars']; //set a default query so things don't get overloaded as the user clicks a bunch on the map
 
-  $(document).ready(function() {
-    $('[data-action=submit-search]').click(function() {
-      query = [document.querySelector('[data-element="place-search"]').value];
-      initialize();
-    });
+  $(function() {
+      $('[data-action=submit-search]').on('click', function() {
+        query = [document.querySelector('[data-element="place-search"]').value];
+        initialize();
+      });
 
-    $('[data-element=place-search]').keypress(function(event){
-        if(event.keyCode == 13){
-        $('[data-action=submit-search]').click();
-        }
-    });
-  });
+      $('[data-element=place-search]').on('keydown', function(event){
+          if(event.keyCode == 13){
+               $('[data-action=submit-search]').trigger('click');
+          }
+      });
+    });
 
 function initialize() {
   var center = new google.maps.LatLng(37.422, -122.084058);
@@ -43,7 +43,7 @@ function initialize() {
     clearResults(markers)
     request = {
       location  : event.latLng,
-      radius    : 8047,
+      radius    : 80467.2, //50 miles
       name      : query
     };
 

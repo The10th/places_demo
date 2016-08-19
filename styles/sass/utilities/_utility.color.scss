@@ -1,0 +1,50 @@
+@each $text-color, $color in $color-palette {
+    .u-textColor--#{$text-color} {
+        color: map-get($color, base);
+    }
+    .u-bgColor--#{$text-color} {
+        background-color: map-get($color, base);
+    }
+    @each $variant, $tone in $color {
+        .u-textColor--#{$text-color}-#{$variant} {
+            color: $tone;
+        }
+        .u-bgColor--#{$text-color}-#{$variant} {
+            color: $tone;
+        }
+    }
+}
+
+
+/*
+    So let me explain what's going on above...
+
+    (1) The first @each loop iterates through the $color-palette list in the
+    /settings/_setting.global.scss file and takes the key and in that list, and appends it to the
+    `u-textColor--` `u-bgColor--` and classes. It then declares the base color assigned to the key in that list
+    as the text (textColor) or background (bg) colors.
+
+    (2) The second @each loop essentially does the same as the first, but loops inside of the previously
+    delcared $color variable and looks for the color variants - it then appends that to the previously
+    created utilitiy classes
+
+    TL;DR
+    We now have slightly dynamic utility classes for colors :)
+
+    USAGE:
+    .u-textColor--[color]
+    .u-textColor--[color]-[color variant]
+
+    .u-bgColor--[color]
+    .u-bgColor--[color]-[color variant]
+
+    Example:
+    .u-textColor--gray
+    .u-textColor--gray-dark/light
+
+    .u-bgColor--navy
+    .u-bgColor--navy-dark/light
+
+    ** There is no need to utilize the `base` value for color variants; though the class is created
+    if you want extra specificity in your markup.
+*/

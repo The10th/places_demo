@@ -9,6 +9,7 @@
 -----------------------------*/
 @import './utilities/_utility.positioning';
 @import './utilities/_utility.text';
+@import './utilities/_utility.color';
 
 /* Components
 -----------------------------*/
@@ -36,9 +37,7 @@ body {
                                 palette(navy),
                                 palette(lavender, dark),
                                 palette(lavender),
-                                palette(mint, dark),
-                                palette(mint),
-                                palette(mint, light));
+                                palette(lavender, light));
     background-size: 800% 800%;
     -webkit-animation: backgroundGradient 30s ease infinite;
     -moz-animation: backgroundGradient 30s ease infinite;
