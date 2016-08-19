@@ -19,7 +19,7 @@ $searchForm-btn-colorBg--default: $searchForm-border--default;
         border-color: transparent;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        transition: .3s ease;
+        transition: $transition-timing--default ease;
 
         &:focus {
             border-color: $searchForm-border--default;
