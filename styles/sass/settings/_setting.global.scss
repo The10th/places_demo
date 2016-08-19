@@ -5,7 +5,7 @@
 $palette-key: 'base' !default;
 
 @function palette($color-name, $color-variant: $palette-key) {
-    //make the  variant optional
+    //make the variant optional
     @if ($color-variant != null) {
         @return map-get(map-get($color-palette, $color-name), $color-variant);
     } @else {
