@@ -1,6 +1,8 @@
 /* Color function and palette
 -----------------------------*/
 
+// **The color function and palette list are placed in this file so that all succeeding files can have access to both the function and values.
+
 // Make the 'base' color the default value
 $palette-key: 'base' !default;
 
