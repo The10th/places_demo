@@ -10,7 +10,7 @@
             color: $tone;
         }
         .u-bgColor--#{$text-color}-#{$variant} {
-            color: $tone;
+            background-color: $tone;
         }
     }
 }
